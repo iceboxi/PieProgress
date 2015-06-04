@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CycleView.h"
+
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet CycleView *progressView;
 
 @end
 
@@ -22,6 +25,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)toChange:(UISlider *)sender {
+    [self.progressView setProgress:sender.value];
 }
 
 @end

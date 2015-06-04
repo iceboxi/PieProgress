@@ -14,6 +14,7 @@
 		1438822E1B20045400CCDA76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1438822D1B20045400CCDA76 /* Images.xcassets */; };
 		143882311B20045400CCDA76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1438822F1B20045400CCDA76 /* LaunchScreen.xib */; };
 		1438823D1B20045400CCDA76 /* TestPieProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438823C1B20045400CCDA76 /* TestPieProgressTests.m */; };
+		143882481B2032DC00CCDA76 /* CycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143882471B2032DC00CCDA76 /* CycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		143882361B20045400CCDA76 /* TestPieProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPieProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438823B1B20045400CCDA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1438823C1B20045400CCDA76 /* TestPieProgressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPieProgressTests.m; sourceTree = "<group>"; };
+		143882461B2032DC00CCDA76 /* CycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleView.h; sourceTree = "<group>"; };
+		143882471B2032DC00CCDA76 /* CycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				143882271B20045400CCDA76 /* ViewController.h */,
 				143882281B20045400CCDA76 /* ViewController.m */,
 				1438822A1B20045400CCDA76 /* Main.storyboard */,
+				143882461B2032DC00CCDA76 /* CycleView.h */,
+				143882471B2032DC00CCDA76 /* CycleView.m */,
 				1438822D1B20045400CCDA76 /* Images.xcassets */,
 				1438822F1B20045400CCDA76 /* LaunchScreen.xib */,
 				143882201B20045400CCDA76 /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143882291B20045400CCDA76 /* ViewController.m in Sources */,
+				143882481B2032DC00CCDA76 /* CycleView.m in Sources */,
 				143882261B20045400CCDA76 /* AppDelegate.m in Sources */,
 				143882231B20045400CCDA76 /* main.m in Sources */,
 			);
