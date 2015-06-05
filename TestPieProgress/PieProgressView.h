@@ -1,5 +1,5 @@
 //
-//  CycleView.h
+//  PieProgressView.h
 //  TestPieProgress
 //
 //  Created by iceboxi on 2015/6/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CycleView : UIView {
+@interface PieProgressView : UIView {
     float _progress;
 }
 

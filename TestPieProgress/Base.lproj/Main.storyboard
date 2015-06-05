@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-Qh-K1f" customClass="CycleView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-Qh-K1f" customClass="PieProgressView">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -37,12 +37,23 @@
                                     <action selector="toChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tp4-0e-bH7"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph0-i3-SLw">
+                                <rect key="frame" x="266" y="462" width="69" height="30"/>
+                                <state key="normal" title="Animation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationPieProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0n2-FZ-39D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Eyl-Ed-02l" secondAttribute="centerX" id="0w5-1g-WSX"/>
                             <constraint firstAttribute="centerY" secondItem="ikl-Qh-K1f" secondAttribute="centerY" id="N33-c8-b3o"/>
+                            <constraint firstItem="ph0-i3-SLw" firstAttribute="top" secondItem="Eyl-Ed-02l" secondAttribute="bottom" constant="8" id="ckE-la-idA"/>
                             <constraint firstAttribute="centerX" secondItem="ikl-Qh-K1f" secondAttribute="centerX" id="fg0-tH-1Yn"/>
+                            <constraint firstItem="Eyl-Ed-02l" firstAttribute="centerX" secondItem="ph0-i3-SLw" secondAttribute="centerX" id="vdG-T7-jMt"/>
                             <constraint firstItem="Eyl-Ed-02l" firstAttribute="top" secondItem="ikl-Qh-K1f" secondAttribute="bottom" constant="24" id="xHc-R8-H0j"/>
                         </constraints>
                     </view>
