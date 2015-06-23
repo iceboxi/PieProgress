@@ -23,6 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    float startAngle = - M_PI_2;
+    float endAngle1 = startAngle + (2.0 * M_PI * 1);
+    float endAngle0 = startAngle + (2.0 * M_PI * 0);
+    
+    NSLog(@"%f, %f, %f", startAngle, endAngle0, endAngle1);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,17 +40,7 @@
 }
 
 - (IBAction)animationPieProgress:(id)sender {
-    sec = MAX_WAIT_SEC;
-    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(progress:) userInfo:nil repeats:YES];
+    [_progressView setProgress:1 animated:YES];
 }
 
-- (void)progress:(NSTimer *)timer {
-    sec -= timer.timeInterval;
-    [self.progressView setProgress:(MAX_WAIT_SEC-sec)/MAX_WAIT_SEC];
-    
-    if (sec - timer.timeInterval <= 0)
-    {
-        [timer invalidate];
-    }
-}
 @end

@@ -13,5 +13,6 @@
 }
 
 - (void)setProgress:(float)progress;
+- (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
 
 @end
